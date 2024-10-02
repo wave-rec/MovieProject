@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* 전체 레이아웃 설정 */
+.movie-detail-layout {
+  display: flex;
+  gap: 20px; /* 이미지와 정보 사이 간격 */
+  padding: 20px;
+  align-items: flex-start; /* 텍스트 정보가 이미지 상단에 맞춰지도록 설정 */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* 포스터 컨테이너 */
+.poster-container {
+  flex: 1; /* 왼쪽 포스터의 크기 조정 */
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.poster-container img {
+  width: 100%; /* 포스터 이미지가 컨테이너에 맞게 조정 */
+  max-width: 300px; /* 최대 너비 제한 */
+  border-radius: 10px; /* 이미지 모서리 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* 영화 정보 컨테이너 */
+.movie-info-container {
+  flex: 2; /* 오른쪽 정보 영역의 크기 조정 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 각 섹션 간격 */
 }
 
-.card {
-  padding: 2em;
+/* 제목과 평점 레이아웃 */
+.movie-title-rating {
+  display: flex;
+  justify-content: space-between; /* 제목과 평점이 양쪽 끝에 위치하도록 설정 */
+  align-items: center;
+  gap: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+/* 제목 스타일 */
+.movie-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* 평점 스타일 */
+.movie-rating {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* 장르 스타일 */
+.movie-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genre {
+  background-color: #ececec;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* 줄거리 스타일 */
+.movie-overview p {
+  line-height: 1.6; /* 줄 간격 */
+  font-size: 1rem;
 }

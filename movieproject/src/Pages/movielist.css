@@ -1,0 +1,43 @@
+/* movie-list.css */
+
+/* 영화 목록의 컨테이너 스타일 */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄로 카드가 표시되도록 설정 */
+  justify-content: center; /* 가운데 정렬 */
+  gap: 20px; /* 카드 간 간격 */
+  padding: 20px;
+}
+
+/* 각 영화 카드의 스타일 */
+.movie-card {
+  width: 200px;
+  cursor: pointer; /* 클릭 가능한 요소로 설정 */
+  transition: transform 0.3s ease; /* 호버 시 애니메이션 효과 */
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* 마우스 호버 시 확대 효과 */
+}
+
+/* 카드 이미지 스타일 */
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* 이미지 모서리 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+/* 영화 제목 스타일 */
+.movie-card h2 {
+  font-size: 1.1em;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* 영화 정보 텍스트 스타일 */
+.movie-card p {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
