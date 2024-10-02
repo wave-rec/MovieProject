@@ -19,9 +19,7 @@ const MovieList = () => {
       {movieListData.results.map((movie) => (
         <div key={movie.id} onClick={() => handleClick(movie.id)} className="hover:bg-gray-200">
           <MovieCard 
-            title={movie.title} 
-            posterPath={movie.poster_path} 
-            rating={movie.vote_average} 
+            movie={ movie }
           />
         </div>
       ))}
