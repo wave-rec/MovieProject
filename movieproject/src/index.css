@@ -2,25 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 추가적인 스타일 */
-.movie-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.movie-card {
-  width: 200px;
-  margin: 10px;
-  text-align: center;
-  border: 1px solid #ddd; /* 임시 스타일 */
-  background-color: #f9f9f9; /* 임시 배경색 */
-}
-
-.movie-card img {
-  width: 100%;
-}
-
-.movie-card h2, .movie-card p {
-  margin: 10px 0;
-}
