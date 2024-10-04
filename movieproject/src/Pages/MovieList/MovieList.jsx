@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import MovieCard from '../components/MovieCard';
+import MovieCard from '../../components/MovieCard/MovieCard';
+import '../MovieList/MovieList.css'
 
 // 영화 목록을 표시하고 각 MovieCard 컴포넌트를 클릭했을 때 MovieDetail로 넘어갈 수 있게 해주는 페이지
 const MovieList = () => {

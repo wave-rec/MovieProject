@@ -1,6 +1,6 @@
 // Signup.jsx
 import React from 'react';
-import '../Pages/SignUp.css'
+import '../SignUp/Signup.css'
 
 const Signup = () => {
   return (

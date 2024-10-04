@@ -1,4 +1,5 @@
 import React from 'react';
+import '../MovieCard/MovieCard.css'
 
 //MovieCard 에 제목, 포스터, 평점 props를 설정해주고 기본 베이스 이미지 url을 선언해준 뒤
 const MovieCard = ({ movie }) => {

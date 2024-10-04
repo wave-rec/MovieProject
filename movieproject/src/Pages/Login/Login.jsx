@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Pages/Login.css'; 
+import '../Login/Login.css'
 
 const Login = () => {
   //로그인 버튼 클릭시에 로그인 기능 구현하려면 필요 현재는 껍데기만 있음

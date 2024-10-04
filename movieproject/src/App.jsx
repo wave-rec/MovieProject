@@ -1,14 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar'; 
-import MovieList from './Pages/MovieList';
-import MovieDetail from './Pages/MovieDetail';
-import SignUp from './Pages/SignUp';
-import Login from './Pages/Login';
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar'; 
+import MovieList from '../src/Pages/MovieList/MovieList'
+import MovieDetail from '../src/Pages/MovieDetail/MovieDetail'
+import SignUp from './Pages/SignUp/SignUp';
+import Login from './Pages/Login/Login';
 
 const App = () => {
   return (
-    <Router>
       <div style={{ paddingTop: '80px' }}> 
         <NavBar />
         <Routes>
@@ -18,7 +17,6 @@ const App = () => {
           <Route path="/login" element={<Login />} />
         </Routes>
       </div>
-    </Router>
   );
 };
 
