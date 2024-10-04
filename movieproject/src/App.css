@@ -1,3 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.auth-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-buttons button:hover {
+  background-color: #0056b3;
+}
+
 .movie-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -23,9 +53,6 @@
   margin: 0;
 }
 
-
-
-
 .movie-card img {
   height: 250px;
   width: 100%;
@@ -46,7 +73,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
 }
-
 
 .poster-container {
   flex: 1;
