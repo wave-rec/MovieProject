@@ -5,16 +5,61 @@
   width: 100%;
   background-color: #333;
   color: white;
-  padding: 15px 30px;
+  padding: 15px; 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   box-sizing: border-box;
   z-index: 1000;
+  margin: 0; 
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 2em;
+  margin: 0; 
+}
+
+
+.navbar-search-container {
+  display: flex; 
+  align-items: center;
+  margin: 0; 
+}
+
+
+.navbar-search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 5px; 
+}
+
+
+.navbar-search-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0; 
+}
+
+.navbar-search-button:hover {
+  background-color: #0056b3;
+}
+
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
 }
 
 .auth-buttons button {
-  margin: 0 10px;
+  margin: 0;
   padding: 10px 20px;
   font-size: 1em;
   border-radius: 5px;

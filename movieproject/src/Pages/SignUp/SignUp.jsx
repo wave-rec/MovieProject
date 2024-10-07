@@ -1,4 +1,3 @@
-// Signup.jsx
 import React from 'react';
 import '../SignUp/Signup.css'
 
