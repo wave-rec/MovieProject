@@ -38,15 +38,56 @@
 }
 
 .login-button {
-  width: 25%;
+  width: 80%;
   padding: 12px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .login-button:hover {
   background-color: #0056b3;
+}
+
+.kakao-login-button {
+  background-color: #FFEB00; 
+  color: #3c1e1e;
+  font-weight: bold;
+}
+
+.kakao-login-button:hover {
+  background-color: #FFDD00;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.login-input.error {
+  border: 1px solid red;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .login-input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .login-button {
+    width: 100%;
+  }
+
+  .kakao-login-button {
+    width: 100%;
+  }
 }
