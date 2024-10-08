@@ -52,6 +52,21 @@
   background-color: #0056b3;
 }
 
+.kakao-signup-button {
+  width: 50%;
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #FFEB00; 
+  color: #3c1e1e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.kakao-signup-button:hover {
+  background-color: #FFDD00;
+}
+
 .error-message {
   color: red;
   margin-bottom: 15px;
@@ -62,18 +77,55 @@
   margin-bottom: 15px;
 }
 
+
 @media (max-width: 768px) {
   .signup-container {
     width: 90%;
     padding: 15px;
+    box-shadow: none; 
+  }
+
+  .signup-form h2 {
+    font-size: 1.5em;
   }
 
   .signup-input {
     width: 100%;
     padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .signup-button,
+  .kakao-signup-button {
+    width: 100%; 
   }
 
   .signup-button {
-    width: 100%;
+    padding: 10px;
+    font-size: 1em; 
+  }
+
+  .kakao-signup-button {
+    padding: 10px;
+    font-size: 1em; 
   }
 }
+
+@media (max-width: 480px) {
+  .signup-container {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .signup-input {
+    padding: 8px;
+    font-size: 0.8em; 
+  }
+
+  .signup-button,
+  .kakao-signup-button {
+    padding: 10px;
+    font-size: 0.9em; 
+}}
+
