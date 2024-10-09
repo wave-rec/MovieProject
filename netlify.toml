@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"      
-  publish = "movieproject/dist"  
+  publish = "dist"  
   base = "movieproject"         
 
 [[redirects]]
