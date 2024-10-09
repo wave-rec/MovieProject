@@ -5,7 +5,7 @@
   width: 100%;
   background-color: #333;
   color: white;
-  padding: 15px;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,14 +23,13 @@
 .navbar-search-container {
   display: flex;
   align-items: center;
-  margin: 0;
-  width: auto;
-  flex: 1;
+  width: 60%;
+  justify-content: center;
 }
 
 .navbar-search-input {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -39,13 +38,16 @@
 }
 
 .navbar-search-button {
-  padding: 10px 15px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0;
+}
+
+.navbar-search-button:hover {
+  background-color: #0056b3;
 }
 
 .auth-buttons {
@@ -54,7 +56,6 @@
 }
 
 .auth-buttons button {
-  margin: 0;
   padding: 10px 20px;
   font-size: 1em;
   border-radius: 5px;
@@ -78,48 +79,41 @@
 }
 
 @media (max-width: 1024px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
   .navbar-search-container {
-    margin-top: 10px;
-    width: 100%;
-  }
-  .navbar-search-input {
     width: 80%;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
-  .auth-buttons {
+  
+  .navbar-search-input {
     width: 100%;
-    justify-content: space-between;
   }
+
   .auth-buttons button {
-    width: 45%;
+    width: 100px;
   }
 }
 
 @media (max-width: 768px) {
-  .logo {
-    font-size: 1.5em;
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
   }
-  .navbar-search-input {
-    width: 70%;
-  }
-  .auth-buttons button {
-    width: 100%;
-    font-size: 0.8em;
-  }
-}
 
-@media (max-width: 480px) {
-  .navbar-search-input {
-    width: 60%;
-  }
-  .auth-buttons button {
+  .navbar-search-container {
     width: 100%;
   }
-  .logo {
-    font-size: 1.5em;
+
+  .navbar-search-input {
+    width: 80%;
+    margin-right: 5px;
+  }
+
+  .auth-buttons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .auth-buttons button {
+    width: 100%;
   }
 }
