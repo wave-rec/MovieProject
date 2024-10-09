@@ -11,6 +11,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0;
+  max-width: 100%;
 }
 
 .movie-card img {
@@ -29,7 +30,7 @@
 
   .movie-card {
     height: 300px;
-    width: 150px;
+    width: 100%;
   }
 
   .movie-card img {
@@ -46,7 +47,7 @@
 
   .movie-card {
     height: 250px;
-    width: 130px;
+    width: 100%;
   }
 
   .movie-card img {

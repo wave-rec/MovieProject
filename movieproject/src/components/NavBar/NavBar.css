@@ -24,10 +24,12 @@
   display: flex;
   align-items: center;
   margin: 0;
+  width: 100%;
 }
 
 .navbar-search-input {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -112,30 +114,18 @@
 }
 
 @media (max-width: 1024px) {
-  .navbar-search-input {
-    width: 250px;
-  }
-
-  .logo {
-    font-size: 1.8em;
-  }
-}
-
-@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
   }
 
   .navbar-search-container {
-    flex-direction: column;
     width: 100%;
     margin-top: 10px;
   }
 
   .navbar-search-input {
-    width: 100%;
+    width: 100%; 
     margin-bottom: 10px;
   }
 
@@ -145,11 +135,31 @@
 
   .auth-buttons {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .auth-buttons button {
     width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .navbar-search-input {
+    width: 80%;
+  }
+
+  .auth-buttons button {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .profile-thumbnail {
+    width: 35px;
+    height: 35px;
   }
 }
 
