@@ -25,11 +25,7 @@
   text-align: center;
 }
 
-
 @media (max-width: 1024px) {
-  .movie-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
   .movie-card {
     height: 300px;
@@ -47,9 +43,6 @@
 }
 
 @media (max-width: 768px) {
-  .movie-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   .movie-card {
     height: 250px;
@@ -67,9 +60,6 @@
 }
 
 @media (max-width: 480px) {
-  .movie-list {
-    grid-template-columns: 1fr; 
-  }
 
   .movie-card {
     width: 100%;
@@ -79,5 +69,10 @@
   .movie-card img {
     width: 100%;
     height: auto;
+  }
+
+  .movie-card h2 {
+    height: auto;
+    font-size: 0.7em;
   }
 }
