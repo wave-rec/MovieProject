@@ -7,3 +7,23 @@
   margin: 0 auto;
   justify-content: center;
 }
+
+@media (max-width: 1024px) {
+  .movie-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .movie-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .movie-list {
+    grid-template-columns: 1fr; 
+  }
+}

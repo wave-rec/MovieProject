@@ -69,7 +69,7 @@
   background-color: #0056b3;
 }
 
-/* 프로필 썸네일 이미지 스타일 */
+
 .profile-thumbnail {
   width: 40px;
   height: 40px;
@@ -79,7 +79,6 @@
   border: 2px solid #ddd;
 }
 
-/* 드롭다운 메뉴 스타일 */
 .dropdown-menu {
   position: absolute;
   top: 60px;
@@ -113,7 +112,12 @@
   outline: none;
 }
 
-/* 반응형 스타일 추가 */
+@media (max-width: 1024px) {
+  .navbar-search-input {
+    width: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .logo {
     font-size: 1.5em;
