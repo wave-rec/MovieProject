@@ -34,7 +34,7 @@ const Signup = () => {
           setError(`회원가입 중 오류 발생: ${error.message}`);
         } else {
           setError('');
-          setSuccess('회원가입이 성공적으로 완료되었습니다. 이메일을 확인해주세요.');
+          setSuccess('회원가입이 성공적으로 완료되었습니다.');
         }
       })
       .catch((error) => {

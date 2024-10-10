@@ -31,7 +31,7 @@ const Login = () => {
     });
   };
 
-  // 카카오톡 소셜로그인 함수
+  // 카카오톡 소셜로그인 함수 
   const handleKakaoLogin = () => {
     supabase.auth.signInWithOAuth({
       provider: 'kakao',
