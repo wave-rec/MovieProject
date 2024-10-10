@@ -23,7 +23,7 @@
 .navbar-search-container {
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 50%;
   justify-content: center;
 }
 
@@ -78,18 +78,62 @@
   border: 2px solid #ddd;
 }
 
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+  color: #007BFF;
+}
+
+.dropdown-menu button:focus {
+  outline: none;
+}
+
 @media (max-width: 1024px) {
+  .navbar {
+    padding: 10px;
+  }
+  
   .navbar-search-container {
     width: 80%;
     margin-top: 10px;
   }
-  
+
   .navbar-search-input {
     width: 100%;
   }
 
   .auth-buttons button {
     width: 100px;
+  }
+
+  .dropdown-menu {
+    top: 50px;
+    width: 100%;
+    right: 0;
   }
 }
 
@@ -114,6 +158,30 @@
   }
 
   .auth-buttons button {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    top: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-search-input {
+    width: 80%;
+  }
+
+  .auth-buttons button {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .dropdown-menu {
+    top: 50px;
     width: 100%;
   }
 }
